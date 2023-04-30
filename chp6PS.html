@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex PS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+           background-color: rgba(0, 0, 0, 0.392); 
+           color:rgb(23, 23, 23);
+           height: 30px;
+           padding: 10px 10px 10px 10px;
+           text-align: right;
+           position: sticky;
+           top:0;
+           z-index: 1100;
+        }
+        header nav ul{
+            display: inline;
+        }
+        header nav ul li{
+            display: inline;
+            padding: 10px 10px 10px 10px;
+        }
+        .left{
+            height: 40vh;
+            width:20vw;
+            background-color: pink;
+            border: 3px solid gray;
+        }
+        .middle{
+            height: 40vh;
+            width:20vw;
+            background-color: rgb(167, 91, 167);
+            border: 3px solid gray;
+        }
+        .right{
+            height: 40vh;
+            width:20vw;
+            background-color: rgb(35, 112, 151);
+            border: 3px solid gray;
+        }
+
+        .bgset{
+            background-color: black;
+            height: 40vh;
+            color:rgb(142, 53, 53);
+            font-family: sans-serif;
+            font-style: oblique;
+            font-weight: bolder;
+            font-size:xx-large;
+            text-align:center;
+            line-height:100px;
+            background-image: url('property.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment:fixed;
+            position: relative;
+            z-index: 99;
+            top: 0px;
+        }
+        .container{
+            display: flex;
+            justify-content:space-evenly;
+            flex-direction: row;
+            align-items: center;
+            height: 50vh;
+            position: relative;
+            z-index: 1;
+        }
+        footer{
+            height: 90vh;
+            background-color: rgba(0, 0, 0, 0.392); 
+            color:rgb(23, 23, 23);
+            
+        }
+        footer p ul li{
+            list-style:circle;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header> 
+    <div class="bgset">Welcome to our page!!!</div>
+    <div class="container">
+        <div class="left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum dicta recusandae nulla esse vel possimus fugit ducimus perspiciatis tempora velit? Asperiores temporibus distinctio ratione commodi deleniti sint doloremque ipsam culpa. Ex minima voluptates illo quam nam cumque saepe, necessitatibus nulla, amet quae odio corrupti.</div>
+        <div class="middle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid sint possimus ut aspernatur hic iste, aliquam aperiam quas consectetur in dignissimos dicta reprehenderit.</div>
+        <div class="right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid sint possimus ut aspernatur hic iste, aliquam aperiam quas consectetur in dignissimos dicta reprehenderit.</div>
+    </div>
+    <footer>
+        <p>follow us on:</p>
+        <ul>
+            <li>Instagram</li>
+            <li>Facebook</li>
+            <li>Twitter</li>
+        </ul>
+    </footer>
+</body>
+</html>

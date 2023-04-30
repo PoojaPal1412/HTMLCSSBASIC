@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter3: Css Box Model</title>
+    <style>
+        *{
+            margin: 0;;
+            padding: 0;
+        }
+        header{
+            height: 74px;
+            background: black;
+            color: white;
+           /* padding:99px;
+            margin: 99px; */
+        }
+        .content{
+            background-color: red;
+            height: 90vh;
+            padding:20px;
+            margin: 30px;
+            border:3px solid blue;
+            box-sizing: border-box;
+        }
+        footer{
+            background-color: rebeccapurple;
+            height: 66px;
+        }
+        .center{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </header>
+    <div class="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptas numquam exercitationem odio! Excepturi, odit. Repellat distinctio veniam facere ut fugiat, doloremque quo! Deleniti sequi nihil ab illo maxime omnis culpa, reprehenderit voluptas dolorem.
+    </div>
+    <footer>
+        <p class="center">copywrite Sportmania &copy; </p>
+    </footer>
+</body>
+</html>

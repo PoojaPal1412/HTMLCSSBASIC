@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siz Position and list property</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        header nav ul li{
+            display: inline;
+            font-size: 1vw;
+            padding:10px;
+        }
+        header{
+            padding: 25px;
+            background-color: black;
+            color:antiquewhite;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 5
+        }
+        .container{
+            min-height: 2333px;
+            background-color: rgb(93, 19, 19);
+            color:yellowgreen;
+            position: relative;
+            z-index: 3;
+        }
+        .container2{
+            background-color: black;
+            color: white;
+        }
+        .container2 ul li{
+            list-style: square inside url(property.jpg) ;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">hello</div>
+    <div class="container2">
+        <p>Follow us on </p>
+        <ul>
+            <li>Instagram</li>
+            <li>FB</li>
+            <li>Twitter</li>
+        </ul>
+    </div>
+</body>
+</html>

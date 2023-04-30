@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transfromation, Transition and Animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    
+        .progress{
+            height: 3px;
+            background-color: royalblue;
+            animation: load 1s ease-in-out 1;
+        }
+        header{
+            height: 122px;
+            background-color: darkred;
+        }
+        main{
+            height: 899px;
+            background-color: cadetblue;
+        }
+        img{
+            animation: rotate 1s ease-in infinite;
+        }
+        @keyframes load {
+            0%{
+                width:0;
+            }
+            50%{
+                width:40vw;
+            }
+            100%{
+                width:100vw;
+            }
+        }
+        @keyframes rotate {
+            0%{
+                transform: rotate(-360deg);
+            }
+            50%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        .slider{
+            background-color: coral;
+            height: 523px;
+            width: 100vw;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="progress">
+
+    </div>
+    <header>
+
+    </header>
+    <main>
+        
+        <div class="slider">
+
+        </div>
+        <img src="wheel.jpg">
+        <img src="dragon.png">
+    </main>
+    
+</body>
+</html>
